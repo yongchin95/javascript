@@ -13,6 +13,11 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        
+        let numbers = [2, 4, 14, 10, 90, 23, 16];    
+        numbers.sort(function(a, b){return a-b});
+        
+        alert (numbers);
+
     });
 })();

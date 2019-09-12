@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    
+    let lol = confirm("Veux-tu un gateau?");
+
+
+    if (lol==true) {
+        alert ("Felicitation!");
+    }
+    else {
+        alert ("du gateau ça ne se refuse pas!");
+    }
+
 })();

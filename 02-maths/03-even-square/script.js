@@ -11,6 +11,15 @@
 
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+
+        let array= [];
+
+        for (let i=0 ; i<21 ; i+=2){
+            console.log(i); //pour voir si la loop fonctionne sur la console
+        var square = i*i;
+        array.push(square);
+        }
+        
+        alert(array);
     });
 })();

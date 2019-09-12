@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+
+while (true){
+    let age= prompt ("Quel âge as tu?");
+  let  sexe=prompt ("Quel est ton sexe?");
+   let  ville=prompt ("Quel ville habite-tu?");
+    let conf=confirm (`Tu as ${age} ans,tu es ${sexe}, tu habite à ${ville}`);
+ 
+    if (conf==true) {
+    break;
+    }
+}
+
 })();
