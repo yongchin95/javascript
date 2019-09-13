@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click' , ()=>{
+       
+        let Inputcolor = document.getElementById('color').value;
+
+        document.body.style.backgroundColor= Inputcolor ;
+    });
 })();
+
