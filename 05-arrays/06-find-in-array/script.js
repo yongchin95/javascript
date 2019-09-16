@@ -87,6 +87,15 @@
             email: "gkeatche@google.fr",
         },
     ];
-
+    document.getElementById('run').addEventListener('click' , ()=>{
     // your code here
+    for (let i=0; i < people.length; i++) {
+        if (people[i].lastname == "Dupont" && people[i].firstname =="Jean"){
+            console.log(people[i].email + " "+"index=" +i);
+        }
+
+        };
+        
+    
+})
 })();

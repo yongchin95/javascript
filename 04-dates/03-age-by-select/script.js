@@ -11,4 +11,41 @@
 
 (() => {
     // your code here
+
+
+
+    document.getElementById('run').addEventListener('click' , ()=>{
+
+        let dayhb = document.getElementById('dob-day').value;
+        let monthhb = document.getElementById('dob-month').value;
+        let yearhb = document.getElementById('dob-year').value;
+        let inputhb = (dayhb , monthhb , yearhb);
+        
+        let day = getDay ();
+        let month = getMonth ()-1;
+        let year = getFullYear();
+        let yeardiff = year - yearhb;
+
+        alert ( "Vous etez né le "+ dayhb +" - " + monthhb+ " - " +yearhb+" ");
+
+
+
+        if(monthhb > month) yeardiff--;
+            else
+                {
+            if(monthhb == month)
+            {
+              if(dayhb > day) yeardiff--;
+            }
+  }
+            alert( yeardiff);
+
+        
+
+
+
+
+    });
+
+    
 })();

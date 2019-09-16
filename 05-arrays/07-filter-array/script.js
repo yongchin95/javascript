@@ -88,5 +88,17 @@
         },
     ];
 
-    // your code here
+   document.getElementById('run').addEventListener('click' , ()=>{
+   
+    // for (let i=0; i < people.length; i++) {
+    //     if (people[i].age>18){
+    //         console.log(people[i]);
+    //     }
+
+    //     };
+    var Sorting = people.filter(person => person.age > 18)
+
+    console.log(Sorting);
+    })
+    
 })();

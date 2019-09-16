@@ -37,6 +37,17 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
+    document.getElementById('run').addEventListener('click' , ()=>{
 
+
+        people.forEach(function(person) {
+            console.log(person.lastname);
+
+             //  person = {
+            //    lastname: "toto"
+            });
+            
+        
+    })
     // your code here
 })();

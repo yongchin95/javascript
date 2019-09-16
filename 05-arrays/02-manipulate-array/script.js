@@ -22,6 +22,12 @@
         "raisin",
         "cerise",
     ];
+    document.getElementById('run').addEventListener('click' , ()=>{
+    fruits[0] = 'banane';
+    fruits[9] = 'kiwi';
+    console.log(fruits);
+
+    })
 
     // your code here
 })();
