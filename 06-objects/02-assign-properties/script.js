@@ -27,4 +27,14 @@
         user: null,
     };
     // your code here
+    document.getElementById('run').addEventListener('click' , ()=>{
+
+        computers.forEach(function(valeur) {
+        const ordi = {...defaultProps};
+    
+        var obj = Object.assign(ordi, valeur);
+        
+        console.log(obj);
+        });
+    });
 })();
