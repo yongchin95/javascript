@@ -17,4 +17,10 @@
         }
     }
     // your code here
+    document.getElementById('run').addEventListener('click' , ()=>{
+    var Skitty= new Cat ("Skitty" , 9);
+    var Pixel = new Cat ("Pixel", 6);
+
+    console.log(Skitty, Pixel)
+    });
 })();

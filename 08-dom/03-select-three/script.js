@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+
+    let auboutdurouleau = document.getElementsByClassName("target")
+    for (let i=0 ; i< auboutdurouleau.length ;i++){
+        auboutdurouleau[i].innerHTML = "owned";
+    }
 })();
