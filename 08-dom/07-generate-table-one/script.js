@@ -10,5 +10,28 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    function addTable() {
+        var myTableDiv = document.getElementById("target");
+      
+        var table = document.createElement('TABLE');
+      
+        var tableBody = document.createElement('TBODY');
+        table.appendChild(tableBody);
+      
+        for (var i = 0; i < 10; i++) {
+          var tr = document.createElement('TR');
+          tableBody.appendChild(tr);
+      
+          for (var j = 0; j < 1; j++) {
+            var td = document.createElement('TD');
+            td.appendChild(document.createTextNode(i));
+            tr.appendChild(td);
+          }
+        }
+        myTableDiv.appendChild(table);
+      }
+      addTable();
+   
+
 })();

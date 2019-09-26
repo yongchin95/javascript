@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    let imagelink = document.querySelector('img').getAttribute('src')
+    console.log(imagelink);
+
+
+    let newimagelink = document.querySelector('img').getAttribute('data-hover')
+    console.log(newimagelink);
+
+    document.querySelector('img').addEventListener("mouseover", () => {
+        document.querySelector('img').setAttribute('src',newimagelink)
+    })
+    document.querySelector('img').addEventListener("mouseout", () => {
+        document.querySelector('img').setAttribute('src',imagelink)
+    })
+    
+
 })();

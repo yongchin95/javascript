@@ -11,4 +11,25 @@
 
 (() => {
     // your code here
+    function addTable() {
+        var myTableDiv = document.getElementById("target");
+      
+        var table = document.createElement('TABLE');
+      
+        var tableBody = document.createElement('TBODY');
+        table.appendChild(tableBody);
+      
+        for (var i = 1; i < 11; i++) {
+          var tr = document.createElement('TR');
+          tableBody.appendChild(tr);
+      
+          for (var j = 1; j < 11; j++) {
+            var td = document.createElement('TD');
+            td.appendChild(document.createTextNode([i]*[j]));
+            tr.appendChild(td);
+          }
+        }
+        myTableDiv.appendChild(table);
+      }
+      addTable();
 })();

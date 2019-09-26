@@ -19,4 +19,16 @@
     ];
 
     // your code here
+    let change= document.querySelector('img')
+    let index =1 ;
+
+    document.getElementById('next').addEventListener('click' , () =>{
+        change.src = gallery[index];
+
+        index ++ ;
+
+        if(index == gallery.length){
+            index = 0 ; 
+        }
+    })
 })();
