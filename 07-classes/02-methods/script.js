@@ -11,8 +11,8 @@
 
 (() => {
     // your code here
-    document.getElementById('run').addEventListener('click' , ()=>{
-
+   
+ document.getElementById('run').addEventListener('click' , ()=>{
         class Person {
             constructor(firstname, lastname) {
                 this.firstname = firstname

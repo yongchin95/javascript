@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    document.getElementById("pass-one").addEventListener("input", () => {
+        let value = document.getElementById("pass-one").value;
+    
+        document.getElementById("counter").innerHTML = value.length + "/10";
+    
+        if (value.length > 9) {
+          document.getElementById("pass-one").setAttribute("maxlength", 10);
+        }
+      });
 })();

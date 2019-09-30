@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click' , ()=>{
+   
+    let mdp = document.getElementById('pass-one').value;
+    let newmdp = document.getElementById('pass-two').value;
+    
+            if (mdp == newmdp){
+            document.getElementById('pass-two').style.border = 'thick solid green';
+            console.log('matching');
+            }
+            else {
+            document.getElementById('pass-two').style.border = 'thick solid red';
+            console.log('no-matching');
+            }
+    })
 })();

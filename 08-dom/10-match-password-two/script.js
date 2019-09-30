@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click' , ()=>{
+   
+        let mdp = document.getElementById('pass-one').value;
+        let newmdp = document.getElementById('pass-two').value;
+
+                if (mdp == newmdp){
+                document.getElementById('pass-two').style.border = 'thick solid green';
+                console.log('great');
+                }
+                else {
+                document.getElementById("pass-two").classList.add('error');
+                document.getElementById("pass-one").classList.add('error');
+                }
+        })
+    
 })();

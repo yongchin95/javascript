@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+    let reg = /(^(?=(.*\d){2,}).{8,}$)/
+    document.getElementById("pass-one").addEventListener("input", () => {
+        let value = document.getElementById("pass-one").value;
+        
+        if (reg.test(value)) {
+          document.getElementById('validity').innerHTML = 'ok';
+        }
+        else {
+        document.getElementById('validity').innerHTML = 'not ok';
+        }
+      });
 })();
